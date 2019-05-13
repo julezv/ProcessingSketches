@@ -40,29 +40,37 @@ public class WhiteLeftBlackRight extends PApplet {
         }
         if (mouseX < 100 && mouseX > 50) {
 
-            background(255 - 64, 255 - 64, 255 - 64);
+            background(255 - 48, 255 - 48, 255 - 48);
         }
 
         if (mouseX < 150 && mouseX > 100) {
 
-            background(255 - 96, 255 - 96, 255 - 96);
+            background(255 - 64, 255 -64, 255 -64);
         }
         if (mouseX < 200 && mouseX > 150) {
 
-            background(96, 96, 96);
+            background(255 - 96, 255 - 96, 255 - 96);
         }
 
         if (mouseX < 250 && mouseX > 200) {
 
-            background(64, 64, 64);
+            background(255 - 128, 255 - 128, 255 - 112);
         }
 
-        if (mouseX < 270 && mouseX > 250) {
+        if (mouseX < 300 && mouseX > 250) {
 
-            background(32, 32, 32);
+            background(255 - 160, 255 - 160, 255 - 160);
         }
 
-        if (mouseX < 300 && mouseX > 270) {
+        if (mouseX < 350 && mouseX > 300) {
+
+            background(255 - 182, 255 - 182, 255 - 182);
+        }
+        if (mouseX < 400 && mouseX > 450) {
+
+            background(255 - 114, 255 - 114, 255 - 114);
+        }
+        if (mouseX < 500 && mouseX > 450) {
 
             background(0, 0, 0);
         }
