@@ -32,7 +32,7 @@ public class ChangingRainbow extends PApplet {
         }
         if (mouseX < 76 && mouseX > 38) {
 
-            background(255 , 128, 0);
+            background(255, 128, 0);
         }
         if (mouseX < 114 && mouseX > 76) {
 
@@ -64,7 +64,7 @@ public class ChangingRainbow extends PApplet {
         }
         if (mouseX < 342 && mouseX > 304) {
 
-            background(0, 0 , 255);
+            background(0, 0, 255);
         }
         if (mouseX < 380 && mouseX > 342) {
 
