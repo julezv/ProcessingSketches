@@ -6,10 +6,14 @@ import processing.core.PApplet;
 public class Ellipse extends PApplet {
     int x;
     int y;
+    int width;
+    int height;
+    boolean growth;
 
     public void setup() {
         x = 20;
         y = 30;
+        growth = true;
     }
 
     public void settings() {
@@ -21,10 +25,22 @@ public class Ellipse extends PApplet {
         fill(random(255), random(255), random(255), random(250));
         x = mouseX;
         y = mouseY;
-        if(mousePressed) {
-            ellipse(x, y, random(10, 30), random(5, 30));
+        if(growth){
+            width += 10;
+            height += 10;
+            if (width > 150 || height >150){
+                growth = false;
+            }
+        }else{
+            width -= 10;
+            height -= 10;
+            if (width <= 0 || height <=0 ){
+                growth = true;
+            }
         }
-
+        if(mousePressed) {
+            ellipse(x, y, width, height);
+        }
     }
 
     public static void main(String... args) {
