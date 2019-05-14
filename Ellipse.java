@@ -39,7 +39,9 @@ public class Ellipse extends PApplet {
             }
         }
         if(mousePressed) {
-            ellipse(x, y, width, height);
+            rect(x, y, width, height);
+        }else{
+            background(0,0,150);
         }
     }
 
